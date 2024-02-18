@@ -88,8 +88,7 @@
                         <p class="mb-5">Your Travel Partner
                             Seamless travel planning at your fingertips. Book flights, find accommodations, and explore
                             destinations effortlessly. Your journey starts here with ST Travel's</p>
-                        <button class="btn btn-primary bg-[#1DD100] hover:bg-[#76df66] text-black border-none">Buy
-                            Tickets</button>
+                        <button class="btn btn-primary bg-[#1DD100] hover:bg-[#76df66] text-black border-none"><a href="#buy-seats">Buy Tickets</a></button>
                     </div>
                 </div>
             </div>
@@ -166,9 +165,10 @@
                                     <p>Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <button
-                                class="btn hover:bg-[#1DD1001A] hover:border-green-500 text-green-500 border-green-500 bg-[#1DD1001A">
-                                <img src="images/seat-green.png" alt=""><span>40</span> seats left </button>
+                            <div id="seatButton" class="flex px-4 py-5 rounded-3xl items-center gap-2 hover:bg-[#1DD1001A] hover:border-green-500 text-green-500 border-green-500 bg-[#1DD1001A]">
+                                <img src="images/seat-green.png" alt="">
+                                <span id="seatsLeft">40</span> seats left
+                            </div>
                         </div>
                     </div>
                     <div class="hidden md:flex absolute rounded-full w-9 h-9 -mt-5 left-[990px] bg-[#F7F8F8] w-3"></div>
@@ -190,7 +190,7 @@
                 <!-- Seats -->
                 <div class="container bg-white p-9 rounded-3xl flex flex-col md:flex-row justify-center gap-16">
                     <div class="border-r-2 border-dashed pr-4">
-                        <h4 class="border-b-2 border-dashed text-2xl font-bold ">Select Your Seat</h4>
+                        <h4 id="buy-seats" class="border-b-2 border-dashed text-2xl font-bold ">Select Your Seat</h4>
                         <div class="flex justify-between border-b-2 border-dashed pr-4">
                             <p class="flex items-center py-2"><img src="images/seat-gray.png" alt="">Available</p>
                             <p class="flex items-center py-2 text-green-500"><img src="images/seat-green.png"
@@ -208,16 +208,16 @@
                                     <button class="text-[#03071280] font-bold">A</button>
                                 </div>
                                 <div id="a1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">A1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">A1</button>
                                 </div>
                                 <div id="a2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">A2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">A2</button>
                                 </div>
                                 <div id="a3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">A3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">A3</button>
                                 </div>
                                 <div id="a4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">A4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">A4</button>
                                 </div>
                             </div>
 
@@ -226,16 +226,16 @@
                                     <button class="text-[#03071280] font-bold">B</button>
                                 </div>
                                 <div id="b1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">B1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">B1</button>
                                 </div>
                                 <div id="b2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">B2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">B2</button>
                                 </div>
                                 <div id="b3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">B3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">B3</button>
                                 </div>
                                 <div id="b4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">B4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">B4</button>
                                 </div>
                             </div>
 
@@ -244,16 +244,16 @@
                                     <button class="text-[#03071280] font-bold">C</button>
                                 </div>
                                 <div id="c1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">C1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">C1</button>
                                 </div>
                                 <div id="c2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">C2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">C2</button>
                                 </div>
                                 <div id="c3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">C3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">C3</button>
                                 </div>
                                 <div id="c4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">C4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">C4</button>
                                 </div>
                             </div>
 
@@ -262,16 +262,16 @@
                                     <button class="text-[#03071280] font-bold">D</button>
                                 </div>
                                 <div id="d1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">D1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">D1</button>
                                 </div>
                                 <div id="d2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">D2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">D2</button>
                                 </div>
                                 <div id="d3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">D3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">D3</button>
                                 </div>
                                 <div id="d4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">D4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">D4</button>
                                 </div>
                             </div>
 
@@ -280,16 +280,16 @@
                                     <button class="text-[#03071280] font-bold">E</button>
                                 </div>
                                 <div id="e1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">E1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">E1</button>
                                 </div>
                                 <div id="e2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">E2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">E2</button>
                                 </div>
                                 <div id="e3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">E3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">E3</button>
                                 </div>
                                 <div id="e4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">E4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">E4</button>
                                 </div>
                             </div>
 
@@ -298,16 +298,16 @@
                                     <button class="text-[#03071280] font-bold">F</button>
                                 </div>
                                 <div id="f1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">F1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">F1</button>
                                 </div>
                                 <div id="f2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">F2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">F2</button>
                                 </div>
                                 <div id="f3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">F3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">F3</button>
                                 </div>
                                 <div id="f4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">F4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">F4</button>
                                 </div>
                             </div>
 
@@ -316,16 +316,16 @@
                                     <button class="text-[#03071280] font-bold">G</button>
                                 </div>
                                 <div id="g1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">G1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">G1</button>
                                 </div>
                                 <div id="g2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">G2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">G2</button>
                                 </div>
                                 <div id="g3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">G3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">G3</button>
                                 </div>
                                 <div id="g4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">G4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">G4</button>
                                 </div>
                             </div>
 
@@ -334,16 +334,16 @@
                                     <button class="text-[#03071280] font-bold">H</button>
                                 </div>
                                 <div id="h1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">H1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">H1</button>
                                 </div>
                                 <div id="h2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">H2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">H2</button>
                                 </div>
                                 <div id="h3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">H3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">H3</button>
                                 </div>
                                 <div id="h4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">H4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">H4</button>
                                 </div>
                             </div>
 
@@ -352,16 +352,16 @@
                                     <button class="text-[#03071280] font-bold">I</button>
                                 </div>
                                 <div id="i1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">I1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">I1</button>
                                 </div>
                                 <div id="i2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">I2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">I2</button>
                                 </div>
                                 <div id="i3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">I3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">I3</button>
                                 </div>
                                 <div id="i4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">I4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">I4</button>
                                 </div>
                             </div>
 
@@ -370,16 +370,16 @@
                                     <button class="text-[#03071280] font-bold">J</button>
                                 </div>
                                 <div id="j1" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">J1</button>
+                                    <button class="text-[#03071280] font-bold my-seats">J1</button>
                                 </div>
                                 <div id="j2" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">J2</button>
+                                    <button class="text-[#03071280] font-bold my-seats">J2</button>
                                 </div>
                                 <div id="j3" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">J3</button>
+                                    <button class="text-[#03071280] font-bold my-seats">J3</button>
                                 </div>
                                 <div id="j4" class="p-4 px-10 bg-[#F7F8F8] rounded-lg text-center w-[110px] h-[56px] ">
-                                    <button class="text-[#03071280] font-bold">J4</button>
+                                    <button class="text-[#03071280] font-bold my-seats">J4</button>
                                 </div>
                             </div>
 
@@ -389,37 +389,31 @@
                         <div>
                             <h4 class="border-b-2 border-dashed text-2xl font-bold mb-8 ">Details & Fill up information</h4>
                         </div>
-                        <div class="bg-[#F7F8F8] rounded-2xl p-8">
+                        <div class="bg-[#F7F8F8] rounded-2xl p-8" id="seatInfoContainer" style="display:none;">
                             <div class="font-bold border-b-2 border-dashed flex justify-between">
-                                <p>Seat <span class="bg-green-500 px-3 rounded-2xl text-white">0</span></p>
+                                <p>Seat <span id="selectedSeats" class="bg-green-500 px-3 rounded-2xl text-white">0</span></p> 
                                 <p>Class</p>
                                 <p>Price</p>
                             </div>
-                            <div class="flex justify-between py-3">
-                                <p>Seat</p>
-                                <p>Class</p>
-                                <p>550</p>
-                            </div>
-                            <div class="flex justify-between py-3">
-                                <p>Seat</p>
-                                <p>Class</p>
-                                <p>550</p>
-                            </div>
-                            <div class="border-t-2 border-solid">
-                                <div class="flex justify-between font-bold py-3">
-                                    <p>Total Price</p>
-                                    <p>BDT <Span>1100</Span></p>
-                                </div>
-                            </div>
-                            <div class="flex">
-                                <input type="text" placeholder="Have any copupon?" class=" bg-white input input-ghost w-full max-w-xs" />
-                                <button class="bg-green-500 text-white px-4 btn hover:bg-green-500 hover:text-white"> APPLY</button>
-                            </div>
-                            <div class="flex justify-between font-bold py-6">
-                                <p>Grand Total</p>
-                                <p>1100</p>
+                            <div id="seatInfo" class="border-t-2 border-solid">
+                                <!-- Seat information will be dynamically added here -->
                             </div>
                         </div>
+                        <div class="border-t-2 border-solid">
+                            <div class="flex justify-between font-bold py-3">
+                                <p>Total Price</p>
+                                <p>BDT <span id="totalPrice">0</span></p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <input type="text" placeholder="Enter coupon code" class="bg-white input coupon-input w-full max-w-xs" />
+                            <button class="bg-green-500 text-white px-4 coupon-btn btn hover:bg-green-500 hover:text-white">APPLY</button>
+                        </div>
+                        <div class="flex justify-between font-bold py-6">
+                            <p>Grand Total</p>
+                            <p>BDT <span id="grandTotal">0</span></p>
+                        </div>
+                        
                         <!-- Information -->
                         <form class="card-body">
                             <div class="form-control">
@@ -432,7 +426,7 @@
                               <label class="label">
                                 <span class="label-text font-extrabold">Phone Number*</span>
                               </label>
-                              <input type="number" placeholder="number" class="input input-bordered" required />
+                              <input type="text" placeholder="Your Number" class="input input-bordered" required />
                               <div class="form-control">
                                 <label class="label">
                                   <span class="label-text font-extrabold">Email ID*</span>
@@ -475,6 +469,13 @@
           </div>
         </nav>
       </footer>
+
+
+
+      <!-- JS -->
+      <script src="js/script.js">
+        
+      </script>
 </body>
 
 </html>
