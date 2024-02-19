@@ -52,7 +52,6 @@ function updateSeatsOnClick() {
     const seatPrice = 550;
     let totalPrice = 0;
 
-    // Show seat information container when the page loads
     seatInfoContainer.style.display = 'block';
 
     document.querySelectorAll('.my-seats').forEach(button => {
@@ -71,7 +70,6 @@ function updateSeatsOnClick() {
     });
 
     applyButton.addEventListener('click', () => {
-        // Apply coupon logic can be implemented here
         alert('Coupon functionality can be implemented here');
     });
 
@@ -79,7 +77,7 @@ function updateSeatsOnClick() {
         seatInfo.innerHTML += `
             <div class="flex justify-between py-3">
                 <p>${seatName}</p>
-                <p>Class</p>
+                <p>SE-Class</p>
                 <p>${seatPrice}</p>
             </div>`;
     }
@@ -94,7 +92,6 @@ function updateSeatsOnClick() {
     }
 }
 
-// Ensure DOM content is loaded before calling the function
 document.addEventListener('DOMContentLoaded', updateSeatsOnClick);
 
 
@@ -108,26 +105,50 @@ function applyCoupon() {
     const grandTotalElement = document.getElementById('grandTotal');
 
     applyButton.addEventListener('click', () => {
-        const couponCode = couponInput.value.trim(); // Get the value of the coupon input and remove leading/trailing whitespace
-
-        // Example coupon code logic
-        if (couponCode === 'NEW15') {
-            // Apply a 15% discount
-            let totalPrice = parseFloat(totalPriceElement.textContent); // Use parseFloat to handle decimal values
-            let discountedPrice = totalPrice * 0.85; // 15% discount
-            grandTotalElement.textContent = discountedPrice.toFixed(2); // Round to 2 decimal places
+        const couponCode = couponInput.value.trim(); 
+        if (couponCode.toUpperCase() === 'NEW15') {
+            let totalPrice = parseFloat(totalPriceElement.textContent); 
+            let discountedPrice = totalPrice * 0.85; 
+            grandTotalElement.textContent = discountedPrice.toFixed(2); 
             alert('Coupon applied successfully! You got a 15% discount.');
-        } else if (couponCode === 'Couple 20') {
-            // Apply a 20% discount
-            let totalPrice = parseFloat(totalPriceElement.textContent); // Use parseFloat to handle decimal values
-            let discountedPrice = totalPrice * 0.80; // 20% discount
-            grandTotalElement.textContent = discountedPrice.toFixed(2); // Round to 2 decimal places
+            couponInput.style.display = 'none';
+            applyButton.style.display = 'none';
+        } else if (couponCode.toUpperCase() === 'COUPLE20') {
+            let totalPrice = parseFloat(totalPriceElement.textContent); 
+            let discountedPrice = totalPrice * 0.80; 
+            grandTotalElement.textContent = discountedPrice.toFixed(2); 
             alert('Coupon applied successfully! You got a 20% discount.');
+            couponInput.style.display = 'none';
+            applyButton.style.display = 'none';
         } else {
             alert('Invalid coupon code. Please try again.');
         }
     });
 }
 
-// Ensure DOM content is loaded before calling the function
 document.addEventListener('DOMContentLoaded', applyCoupon);
+
+
+
+
+
+
+// Get the next button and the success message element
+const nextButton = document.getElementById('nextButton');
+const successMessage = document.getElementById('successMessage');
+const continueButton = document.getElementById('continueButton');
+
+// Add click event listener to the next button
+nextButton.addEventListener('click', () => {
+    // Show the success message
+    successMessage.classList.remove('hidden');
+});
+
+// Add click event listener to the continue button
+continueButton.addEventListener('click', () => {
+    // Hide the success message
+    successMessage.classList.add('hidden');
+    // Reload the page
+    window.location.reload();
+});
+
